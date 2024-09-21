@@ -20,4 +20,9 @@ public class TemperatureConverterTest {
         int[][] a12 = {{2, 3}, {5, 7}, {11, 13}};
         assertArrayEquals("Should be equal", a11, a12);
     }
+
+    @Test
+    public void testKelvinToCel(){
+        assertEquals(0.0, converter.kelvinToCel((float)273.15), 0.01);
+    }
 }
