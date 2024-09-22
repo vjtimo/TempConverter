@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/vjtimo/TempConverter.git'
+                git branch: 'main', url: 'https://github.com/vjtimo/TempConverter.git'
             }
         }
 
